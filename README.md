@@ -4,19 +4,27 @@ Modelo de ambiente padrão para aplicação de TDD
 
 ## Getting Started
 
+
 ### Prerequisities
+
 
 ### Installing
 
+
 ## Running the tests
+
 
 ### Break down into end to end tests
 
+
 ### And coding style tests
+
 
 ## Deployment
 
+
 ## Built With
+
 
 ## Contributing
 
