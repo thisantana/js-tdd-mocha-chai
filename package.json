@@ -1,0 +1,56 @@
+{
+  "name": "js-tdd-mocha-chai",
+  "version": "1.0.0",
+  "description": "Modelo padrão de ambiente para TDD com mocha-chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test",
+    "lint": "eslint src/*.js",
+    "prepush": "npm run lint && npm run test:coverage"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
+  },
+  "keywords": [
+    "tdd",
+    "js",
+    "javascript",
+    "mocha",
+    "chai"
+  ],
+  "author": "Thiago Santana <thiago.fdsanta@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisantana/js-tdd-mocha-chai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thisantana/js-tdd-mocha-chai/issues"
+  },
+  "homepage": "https://github.com/thisantana/js-tdd-mocha-chai#readme"
+}
